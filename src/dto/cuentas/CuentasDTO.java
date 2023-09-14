@@ -64,7 +64,11 @@ public class CuentasDTO<T> extends Conexion implements CuentasRepositorio<T> {
     }
 
     @Override
+<<<<<<< HEAD
     public void eliminarCuenta(int id) throws SQLException {
+=======
+    public void eliminarCuenta(int id) throws Excepciones {
+>>>>>>> cristian-moreno
         try {
             String sql = "DELETE FROM cuentas WHERE cliente_id = ?";
 
@@ -82,7 +86,11 @@ public class CuentasDTO<T> extends Conexion implements CuentasRepositorio<T> {
     }
 
     @Override
+<<<<<<< HEAD
     public void aumentarDinero(int id, int monto) throws SQLException {
+=======
+    public void aumentarDinero(int id, int monto) throws Excepciones {
+>>>>>>> cristian-moreno
         try {
             String sql = "UPDATE cuentas SET saldo = saldo + ? WHERE id = ?";
 
@@ -99,7 +107,11 @@ public class CuentasDTO<T> extends Conexion implements CuentasRepositorio<T> {
     }
 
     @Override
+<<<<<<< HEAD
     public void retirarDinero(int id, int monto) throws SQLException {
+=======
+    public void retirarDinero(int id, int monto) throws Excepciones {
+>>>>>>> cristian-moreno
         try {
             String sql = "UPDATE cuentas SET saldo = saldo - ? WHERE id = ?";
 
@@ -147,7 +159,11 @@ public class CuentasDTO<T> extends Conexion implements CuentasRepositorio<T> {
     }
 
     @Override
+<<<<<<< HEAD
     public void crearTransaccion(int cuentaOrigen, int cuentaDestino, String tipo, int saldo, int monto) throws SQLException {
+=======
+    public void crearTransaccion(int cuentaOrigen, int cuentaDestino, String tipo, int saldo, int monto) throws Excepciones {
+>>>>>>> cristian-moreno
         try {
             String sql = "INSERT INTO transacciones (fecha, hora, id_cliente, id_cuenta, tipo, monto) VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -177,7 +193,11 @@ public class CuentasDTO<T> extends Conexion implements CuentasRepositorio<T> {
     }
 
     @Override
+<<<<<<< HEAD
     public ResultSet obtenerTodasLasTransacciones() throws SQLException {
+=======
+    public ResultSet obtenerTodasLasTransacciones() throws Excepciones {
+>>>>>>> cristian-moreno
         try {
             String sql = "SELECT * FROM transacciones";
 
